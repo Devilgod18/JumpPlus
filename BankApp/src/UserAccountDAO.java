@@ -109,7 +109,7 @@ public class UserAccountDAO {
         }
     }
 
-    // Add this method to retrieve the 5 most recent transactions
+   
     public List<Transaction> getRecentTransactions(String username) throws SQLException {
         String query = "SELECT * FROM transactions WHERE username = ? ORDER BY created_at DESC LIMIT 5";
         List<Transaction> transactions = new ArrayList<>();
